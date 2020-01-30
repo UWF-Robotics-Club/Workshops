@@ -14,7 +14,7 @@ class Introduction:
     WhileLoops()
     ListOperations()
     Dictionaries()
-    
+    PrintCharArray
 
     """
     def __init__(self):
@@ -24,10 +24,7 @@ class Introduction:
         print()
         input("Press Enter to Continue")
 
-    def AddToCharArray(self, input):
-        self.charArray.append(input)
-        
-    def variableTypes(self):
+    def VariableTypes(self):
         myString = "Hello World!"
         print(type(myString))
 
@@ -42,6 +39,9 @@ class Introduction:
         myFloat = 100.1
         print(type(myFloat))
 
+    def AddToCharArray(self, myInput):
+        self.charArray.append(myInput)
+        
     def Printing():
         global myChar
         global myFloat 
@@ -79,10 +79,19 @@ class Introduction:
         self.charArray.sort()
         self.charArray.reverse()
         print("The last element '" + this.charArray.pop(index)+ "' was removed")
+        PrintCharArray()
+        
+    def Dictionaries(self):
+        Dict = {
+          "Day": 30,
+          "Month": "January",
+          "Year": 2020
+        }
+        print(thisdict)
+
+    def PrintCharArray(self):
         print(self.charArray)
         
-    def Dictionaries():
-        print("TODO")
 ### END OF CLASS ###
 
 t = Introduction()
@@ -90,12 +99,30 @@ print(
     t.__doc__)
 
 while True:
-    t.variableTypes()
+    t.VariableTypes()
     t.__continue__()
-    t.ForLoops()
-    t.__continue__()
+    
     t.AddToCharArray('B')
+    t.PrintCharArray()
+    t.__continue__()
+
+    t.Printing()
+    t.__continue__()
+
     t.ForLoops()
+    t.__continue__()
+
+    t.WhileLoops()
+    t.__continue__()
+
+    t.ListOperations()
+    t.__continue__()
+
+    t.Dictionaries()
+    t.__continue__()
+
+    if(input("Would you like to repeat the lesson? y or n") != y):
+        exit()
 
 # Single Line Comments
 
@@ -105,7 +132,6 @@ Comments
 '''
 
 '''
-Switcher / Dictionary
 Catching errors/exeptions
 Headers from other file locations (adding paths)
 Splitting Files
