@@ -37,6 +37,11 @@ while playAgain:
         if userGuesses[numGuesses-1] > high or userGuesses[numGuesses-1] < low :
             print("Don't forget, your guessing range is between ", low, " and ", high)
 
+        if userGuesses[numGuesses-1] > toGuess :
+            print("You're guess was too high!")
+        else :
+            print("You're guess was too low!")
+
         print("You've guessed ", numGuesses, " time(s)!")
         numGuesses += 1
         print()
